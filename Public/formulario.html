@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coquito Amarillo S.A.S. - Registro de Pedidos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="nav-container">
+            <h1>Coquito Amarillo S.A.S.</h1>
+            <p>Sistema de captura y persistencia de datos</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="tarjeta-formulario">
+            <h2>Registro de Nuevo Pedido</h2>
+            
+            <form action="/registrar" method="POST" class="form-pedido">
+                <div class="campo-grupo">
+                    <label for="nombreCliente">Nombre del cliente</label>
+                    <input type="text" id="nombreCliente" name="nombreCliente"  required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="producto">Producto</label>
+                    <input type="text" id="producto" name="producto"  required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <button type="submit" class="btn-registrar">Registrar Pedido</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

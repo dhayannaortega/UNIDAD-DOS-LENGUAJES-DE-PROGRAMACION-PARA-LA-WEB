@@ -1,0 +1,114 @@
+:root {
+    --color-fondo: #fbf6f6;
+    --color-principal: #4a1525;
+    --color-secundario: #7a5c63;
+    --color-tarjeta: #ffffff;
+    --color-borde: #d9c2c7;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    line-height: 1.6;
+}
+
+.header-principal {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: left;
+}
+
+.nav-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-principal h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.header-principal p {
+    margin: 5px 0 0 0;
+    font-size: 0.95rem;
+    color: #e2d1d4;
+}
+
+.main-container {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-formulario {
+    width: 100%;
+    max-width: 500px;
+    background: var(--color-tarjeta);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(74, 21, 37, 0.08);
+    border: 1px solid var(--color-borde);
+}
+
+.tarjeta-formulario h2 {
+    margin-top: 0;
+    color: var(--color-principal);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-grupo label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-principal);
+}
+
+.campo-grupo input {
+    padding: 11px 14px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    background-color: #faf7f8;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.campo-grupo input:focus {
+    border-color: var(--color-principal);
+    background-color: #ffffff;
+}
+
+.btn-registrar {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.btn-registrar:hover {
+    opacity: 0.9;
+}
